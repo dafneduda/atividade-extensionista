@@ -8,6 +8,10 @@
       content="Saiba mais sobre lixo eletrônico e como descartá-lo corretamente."
     />
     <title>Plataforma e-ciclo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,9 +23,8 @@
     <nav class="menu" aria-label="Menu de navegação">
       <ul>
         <li><a href="#lixo">Lixo Eletrônico</a></li>
-        <li><a href="#descarte">Descarte</a></li>
-        <li><a href="#coleta">Pontos de coleta</a></li>
-        <li><a href="#dados">Dados</a></li>
+        <li><a href="#descarte">Como Descartar</a></li>
+        <li><a href="#coleta">Pontos de Coleta</a></li>
         <li><a href="#videos">Vídeos</a></li>
       </ul>
     </nav>
@@ -82,7 +85,10 @@
               A Green Eletron e outras iniciativas oferecem os Pontos de Entrega
               Voluntária (PEVs) para que você possa descartar seu lixo
               eletrônico de forma segura. Os PEVs podem ser consultados
-              <a href="https://greeneletron.org.br/localizador" target="_blank"
+              <a
+                href="https://greeneletron.org.br/localizador"
+                target="_blank"
+                rel="noopener noreferrer"
                 >clicando aqui</a
               >.
               <br />
@@ -91,6 +97,7 @@
               <a
                 href="https://greeneletron.org.br/lista-completa"
                 target="_blank"
+                rel="noopener noreferrer"
                 >lista do que pode ser descartado</a
               >.
             </p>
@@ -103,32 +110,54 @@
         <img
           src="./assets/images/infografico.png"
           alt="Infográfico sobre lixo eletrônico"
-          style="max-width: 100%; height: auto"
         />
       </section>
     </main>
 
     <section id="videos" class="videos">
-      <h2>Aprendendo com vídeos - Recicla Sampa</h2>
-      <h3>Pilhas e baterias</h3>
-      <iframe
-        width="100%"
-        height="315"
-        src="https://www.youtube.com/embed/tswmX6N8N-4?si=VT8Vuk6CYKxBZtax"
-        title="YouTube video player"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+      <h2>Aprendendo com vídeos</h2>
 
-      <h3>Eletro Lixo</h3>
-      <iframe
-        width="100%"
-        height="315"
-        src="https://www.youtube.com/embed/42rzbf_Txug?si=Ag_z1z9968sa4kSx"
-        title="YouTube video player"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+      <div class="video-grid">
+        <div class="video-item">
+          <h3>Pilhas e baterias</h3>
+          <iframe
+            src="https://www.youtube.com/embed/tswmX6N8N-4?si=VT8Vuk6CYKxBZtax"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video-item">
+          <h3>Eletro Lixo</h3>
+          <iframe
+            src="https://www.youtube.com/embed/42rzbf_Txug?si=Ag_z1z9968sa4kSx"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video-item">
+          <h3>Reciclagem</h3>
+          <iframe
+            src="https://www.youtube.com/embed/zGA6YDzGCWo?si=78k9CVzcAgXhmFCf"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video-item">
+          <h3>Reciclagem Lixo Eletrônico</h3>
+          <iframe
+            src="https://www.youtube.com/embed/9IE6f0s_BuA?si=D-c6P0P2ADdLoX3E"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </section>
 
     <section class="finalizacao">
@@ -149,8 +178,8 @@
     </section>
 
     <footer>
-      <p>Feito por Dafne Duda</p>
-      <p>Projeto Atividade Extensionista - Engenharia de Software na UNINTER</p>
+      <p>Feito por Dafne</p>
+      <p>Projeto Atividade Extensionista - 2026</p>
     </footer>
   </body>
 </html>
