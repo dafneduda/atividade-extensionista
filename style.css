@@ -27,9 +27,10 @@ body {
     font-size: 1.1rem;
     color: var(--text-dark);
     line-height: 1.7;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3, h4, .menu a {
+h1, h2, h3, h4, .menu a, .btn-tema {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -71,6 +72,7 @@ header p {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: background-color 0.3s;
 }
 
 .menu ul {
@@ -99,6 +101,24 @@ header p {
     transform: translateY(-2px);
 }
 
+/* Botão Tema Escuro */
+.btn-tema {
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-tema:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 20px;
+}
+
 /* --- CONTAINER PRINCIPAL --- */
 .container {
     max-width: 1100px;
@@ -114,12 +134,13 @@ header p {
     box-shadow: var(--shadow);
     margin-bottom: 50px;
     text-align: left;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s;
     border-left: 5px solid var(--primary);
 }
 
 .conteudo article:hover {
     transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Sombra mais destacada */
 }
 
 .conteudo h2, .videos h2, .infografico h2 {
@@ -168,6 +189,41 @@ header p {
     border-bottom-color: var(--eco-green);
 }
 
+/* --- BARRA DE BUSCA --- */
+.busca-pev {
+    margin-top: 30px;
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--eco-green);
+}
+
+.busca-pev input {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 30px; /* Bordas bem arredondadas */
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.busca-pev input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 8px rgba(192, 142, 169, 0.4);
+}
+
+.pev-item {
+    background: var(--white);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 3px solid var(--primary);
+}
+
 /* --- INFOGRÁFICO --- */
 .infografico {
     margin: 80px 0;
@@ -186,6 +242,7 @@ header p {
     padding: 60px 20px;
     background-color: #e9ecef;
     border-radius: 20px 20px 0 0;
+    transition: background-color 0.3s;
 }
 
 .video-grid {
@@ -203,6 +260,7 @@ header p {
     padding: 15px;
     border-radius: 12px;
     box-shadow: var(--shadow);
+    transition: background-color 0.3s;
 }
 
 .videos iframe {
@@ -257,11 +315,12 @@ header p {
 
 /* --- FOOTER --- */
 footer {
-    background-color: #222;
-    color: #bbb;
+    background-color: var(--primary-dark);
+    color: var(--white);
     text-align: center;
     padding: 30px 20px;
     font-size: 0.9rem;
+    border-top: 4px solid var(--accent);
 }
 
 footer p {
@@ -307,4 +366,26 @@ footer p {
         flex-direction: column;
         text-align: center;
     }
+}
+
+/* --- TEMA ESCURO (Controlado pelo JS) --- */
+body.dark-mode {
+    --bg-light: #121212;
+    --text-dark: #e0e0e0;
+    --white: #1e1e1e;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode header h1 {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+body.dark-mode .videos {
+    background-color: #121212;
+}
+
+body.dark-mode .busca-pev input {
+    background: #2c2c2c;
+    color: #fff;
+    border: 1px solid #444;
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -26,6 +26,9 @@
         <li><a href="#descarte">Como Descartar</a></li>
         <li><a href="#coleta">Pontos de Coleta</a></li>
         <li><a href="#videos">Vídeos</a></li>
+        <li>
+          <button id="theme-toggle" class="btn-tema">🌙 Tema Escuro</button>
+        </li>
       </ul>
     </nav>
 
@@ -40,15 +43,11 @@
             />
             <p>
               Precisa de energia elétrica (tomada, bateria ou pilha) para
-              funcionar?
-              <br />
-              <br />
+              funcionar?<br /><br />
               Smartphones desatualizados, tablets com telas trincadas, notebooks
               com baterias viciadas, fones de ouvido sem fio quebrados,
               roteadores Wi-Fi antigos, cabos e carregadores de todos os tipos:
-              tudo isso é <strong>Lixo Eletrônico</strong>.
-              <br />
-              <br />
+              tudo isso é <strong>Lixo Eletrônico</strong>.<br /><br />
               Equipamentos Elétricos e Eletrônicos (EEE), Resíduos de
               Equipamentos Elétricos e Eletrônicos (REEE) ou simplesmente e-lixo
               são alguns dos termos usados.
@@ -81,25 +80,71 @@
               src="./assets/images/lixo-eletronico.jpg"
               alt="Imagem de vários dispositivos dentro de uma caçamba de descarte."
             />
+            <div style="width: 100%">
+              <p>
+                A Green Eletron e outras iniciativas oferecem os Pontos de
+                Entrega Voluntária (PEVs) para que você possa descartar seu lixo
+                eletrônico de forma segura. Os PEVs podem ser consultados
+                <a
+                  href="https://greeneletron.org.br/localizador"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >clicando aqui</a
+                >.<br /><br />
+                Consulte também a
+                <a
+                  href="https://greeneletron.org.br/lista-completa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >lista do que pode ser descartado</a
+                >.
+              </p>
+
+              <div class="busca-pev">
+                <h3>Encontre um ponto próximo a você:</h3>
+                <input
+                  type="text"
+                  id="busca-bairro"
+                  placeholder="Digite seu bairro (ex: Vila Invernada, Tatuapé)..."
+                />
+                <div id="resultado-busca"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="seguranca">
+          <h2>Segurança de Dados: Antes de Descartar</h2>
+          <div class="content-wrapper">
             <p>
-              A Green Eletron e outras iniciativas oferecem os Pontos de Entrega
-              Voluntária (PEVs) para que você possa descartar seu lixo
-              eletrônico de forma segura. Os PEVs podem ser consultados
-              <a
-                href="https://greeneletron.org.br/localizador"
-                target="_blank"
-                rel="noopener noreferrer"
-                >clicando aqui</a
-              >.
-              <br />
-              <br />
-              Consulte também a
-              <a
-                href="https://greeneletron.org.br/lista-completa"
-                target="_blank"
-                rel="noopener noreferrer"
-                >lista do que pode ser descartado</a
-              >.
+              Muitas pessoas guardam aparelhos velhos pelo medo de vazamento de
+              dados. Siga este passo a passo antes de descartar seu celular ou
+              notebook:<br /><br />
+              <strong>1. Backup:</strong> Salve fotos e arquivos na nuvem
+              (Google Drive, OneDrive) ou em um HD externo.<br />
+              <strong>2. Desconecte:</strong> Saia de todas as suas contas
+              (Google, Apple, Redes Sociais).<br />
+              <strong>3. Remova Chips:</strong> Retire o cartão SIM e o cartão
+              de memória (MicroSD).<br />
+              <strong>4. Restauração de Fábrica:</strong> Vá nas configurações e
+              selecione "Apagar todos os dados / Restaurar padrões de fábrica".
+            </p>
+          </div>
+        </article>
+
+        <article id="mineracao">
+          <h2>Mineração Urbana e o Cenário Global</h2>
+          <div class="content-wrapper">
+            <p>
+              O mundo gerou cerca de <strong>62 milhões de toneladas</strong> de
+              lixo eletrônico recentemente. O Brasil é o 5º maior produtor
+              mundial (ONU, 2024), mas recicla apenas cerca de 3% desse
+              volume.<br /><br />
+              Você sabia que existe mais ouro em 1 tonelada de smartphones do
+              que em 1 tonelada de minério extraído da terra? A
+              <strong>Mineração Urbana</strong> é o processo de recuperar metais
+              preciosos do lixo eletrônico. Descartar corretamente evita a
+              destruição ambiental e fomenta a economia circular.
             </p>
           </div>
         </article>
@@ -116,7 +161,6 @@
 
     <section id="videos" class="videos">
       <h2>Aprendendo com vídeos</h2>
-
       <div class="video-grid">
         <div class="video-item">
           <h3>Pilhas e baterias</h3>
@@ -127,7 +171,6 @@
             allowfullscreen
           ></iframe>
         </div>
-
         <div class="video-item">
           <h3>Eletro Lixo</h3>
           <iframe
@@ -137,7 +180,6 @@
             allowfullscreen
           ></iframe>
         </div>
-
         <div class="video-item">
           <h3>Reciclagem</h3>
           <iframe
@@ -147,11 +189,28 @@
             allowfullscreen
           ></iframe>
         </div>
-
         <div class="video-item">
           <h3>Reciclagem Lixo Eletrônico</h3>
           <iframe
             src="https://www.youtube.com/embed/9IE6f0s_BuA?si=D-c6P0P2ADdLoX3E"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-item">
+          <h3>Cenário Atual no Brasil</h3>
+          <iframe
+            src="https://www.youtube.com/embed/qYfiBUK4dtM"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-item">
+          <h3>O Desafio da Mineração Urbana</h3>
+          <iframe
+            src="https://www.youtube.com/embed/jPAz-m9CGWc"
             title="YouTube video player"
             frameborder="0"
             allowfullscreen
@@ -181,5 +240,7 @@
       <p>Feito por Dafne</p>
       <p>Projeto Atividade Extensionista - 2026</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
