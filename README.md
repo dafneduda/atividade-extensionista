@@ -6,14 +6,17 @@ Plataforma informativa sobre o descarte correto de lixo eletrônico. O projeto t
 
 - Informações sobre o que é lixo eletrônico.
 - Dicas sobre como descartá-lo corretamente.
-- Localização de pontos de coleta.
-- Vídeos educativos sobre o tema.
+- Localização de pontos de coleta com **filtro de busca interativo** por bairro.
+- Vídeos educativos atualizados sobre o tema e o cenário da reciclagem no Brasil.
+- **Novidade:** Orientações sobre segurança de dados (passo a passo antes do descarte).
+- **Novidade:** Informações sobre Mineração Urbana e o impacto global.
+- **Novidade:** Modo Escuro (Dark Mode) para melhor usabilidade e acessibilidade.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5
 - CSS3
-
+- **JavaScript** (Para a lógica de busca e alternância de temas)
 
 ## 📧 Contato
 
